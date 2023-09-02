@@ -6,37 +6,78 @@ Gazo shows how i organise my project folders and simulatenusly paying attention 
 
 ---
 
-### Features
+### Feature
 
-- User Authentication and Authorisation
-- CRUD functionality for post(like a simple blog)
-- Integration and Unit Tests
+- [x] Containerize Application Using Docker
+- [x] User Authentication and Authorisation
+- [x] Integerasi ORM Database Using Gorm
+- [x] CRUD functionality for post(like a simple blog)
+- [x] Integration, Load and Unit Tests
+- [x] And More
 
 
 
----
 
-### Installation Guide
+## Command
 
-- Clone the project by using `git clone`
-- Run `npm install` to install dependencies
-- Run `go run main.go` script to start the server
-- Visit `http://localhost:9090/` to test api
+- ### Application Lifecycle
 
-[View the API endpoint documentation](./docs/API.md)
+  - Install node modules
 
----
+  ```sh
+  $ go get . || go mod || make goinstall
+  ```
 
-### Technologies Used
+  - Build application
 
-- [Golang](https://nodejs.org/) This is a cross-platform runtime environment built on Chrome's V8 JavaScript engine used in running JavaScript codes on the server. It allows for installation and managing of dependencies and communication with databases.
-- [PostgreSQL](https://www.expresjs.org/) This is a NodeJS web application framework.
+  ```sh
+  $ go build -o main || make goprod
+  ```
 
----
+  - Start application in development
 
-### Authors
+  ```sh
+  $ go run main.go | make godev
+  ```
+
+  - Test application
+
+  ```sh
+  $ go test main.go main_test.go || make gotest
+  ```
+
+* ### Docker Lifecycle
+
+  - Build container
+
+  ```sh
+  $ docker-compose build | make dcb
+  ```
+
+  - Run container with flags
+
+  ```sh
+  $ docker-compose up -d --<flags name> | make dcu f=<flags name>
+  ```
+
+  - Run container build with flags
+
+  ```sh
+  $ docker-compose up -d --build --<flags name> | make dcubf f=<flags name>
+  ```
+
+  - Run container
+
+  ```sh
+  $ docker-compose up -d --build | make dcu
+  ```
+
+  - Stop container
+
+  ```sh
+  $ docker-compose down | make dcd
+  ```
+
+### Author
 
 - [Andrew Ihimekpen](https://github.com/IHIMEKPEN)
-- ![alt text](https://avatars.githubusercontent.com/u/75396799?v=4)
-
-
