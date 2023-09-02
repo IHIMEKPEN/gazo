@@ -3,9 +3,10 @@ package handlerForgot
 import (
 	"net/http"
 
+	forgotAuth "gazo/controllers/auth-controllers/forgot"
+	util "gazo/utils"
+
 	"github.com/gin-gonic/gin"
-	forgotAuth "github.com/restuwahyu13/gin-rest-api/controllers/auth-controllers/forgot"
-	util "github.com/restuwahyu13/gin-rest-api/utils"
 	gpc "github.com/restuwahyu13/go-playground-converter"
 	"github.com/sirupsen/logrus"
 )

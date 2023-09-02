@@ -3,9 +3,10 @@ package handlerResend
 import (
 	"net/http"
 
+	resendAuth "gazo/controllers/auth-controllers/resend"
+	util "gazo/utils"
+
 	"github.com/gin-gonic/gin"
-	resendAuth "github.com/restuwahyu13/gin-rest-api/controllers/auth-controllers/resend"
-	util "github.com/restuwahyu13/gin-rest-api/utils"
 	gpc "github.com/restuwahyu13/go-playground-converter"
 	"github.com/sirupsen/logrus"
 )

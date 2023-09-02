@@ -3,9 +3,10 @@ package handlerActivation
 import (
 	"net/http"
 
+	activationAuth "gazo/controllers/auth-controllers/activation"
+	util "gazo/utils"
+
 	"github.com/gin-gonic/gin"
-	activationAuth "github.com/restuwahyu13/gin-rest-api/controllers/auth-controllers/activation"
-	util "github.com/restuwahyu13/gin-rest-api/utils"
 	gpc "github.com/restuwahyu13/go-playground-converter"
 	"github.com/sirupsen/logrus"
 )

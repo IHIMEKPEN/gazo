@@ -3,9 +3,10 @@ package handlerRegister
 import (
 	"net/http"
 
+	registerAuth "gazo/controllers/auth-controllers/register"
+	util "gazo/utils"
+
 	"github.com/gin-gonic/gin"
-	registerAuth "github.com/restuwahyu13/gin-rest-api/controllers/auth-controllers/register"
-	util "github.com/restuwahyu13/gin-rest-api/utils"
 	gpc "github.com/restuwahyu13/go-playground-converter"
 	"github.com/sirupsen/logrus"
 )
@@ -95,6 +96,6 @@ func (h *handler) RegisterHandler(ctx *gin.Context) {
 			return
 		}
 
-		util.APIResponse(ctx, "Register new account successfully", http.StatusCreated, http.MethodPost, nil)
+		util.APIResponse(ctx, "Registered new account successfully", http.StatusCreated, http.MethodPost, nil)
 	}
 }

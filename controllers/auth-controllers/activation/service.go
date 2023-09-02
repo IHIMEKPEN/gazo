@@ -1,6 +1,6 @@
 package activationAuth
 
-import model "github.com/restuwahyu13/gin-rest-api/models"
+import model "gazo/models"
 
 type Service interface {
 	ActivationService(input *InputActivation) (*model.EntityUsers, string)

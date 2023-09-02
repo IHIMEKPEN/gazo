@@ -3,9 +3,10 @@ package handlerCreateStudent
 import (
 	"net/http"
 
+	createStudent "gazo/controllers/student-controllers/create"
+	util "gazo/utils"
+
 	"github.com/gin-gonic/gin"
-	createStudent "github.com/restuwahyu13/gin-rest-api/controllers/student-controllers/create"
-	util "github.com/restuwahyu13/gin-rest-api/utils"
 	gpc "github.com/restuwahyu13/go-playground-converter"
 )
 

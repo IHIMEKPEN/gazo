@@ -1,4 +1,4 @@
-module github.com/restuwahyu13/gin-rest-api
+module gazo
 
 go 1.16
 

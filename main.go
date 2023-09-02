@@ -7,9 +7,11 @@ import (
 	"github.com/gin-contrib/cors"
 	"github.com/gin-contrib/gzip"
 	"github.com/gin-gonic/gin"
-	config "github.com/restuwahyu13/gin-rest-api/configs"
-	route "github.com/restuwahyu13/gin-rest-api/routes"
-	util "github.com/restuwahyu13/gin-rest-api/utils"
+
+	config "gazo/configs"
+
+	route "gazo/routes"
+	util "gazo/utils"
 )
 
 func main() {
@@ -27,7 +29,7 @@ func SetupRouter() *gin.Engine {
 	/**
 	@description Setup Database Connection
 	*/
-	db := config.Connection()
+	 db := config.Connection()
 	/**
 	@description Init Router
 	*/
@@ -56,6 +58,7 @@ func SetupRouter() *gin.Engine {
 	/**
 	@description Init All Route
 	*/
+	route.AdminRoutes(router)
 	route.InitAuthRoutes(db, router)
 	route.InitStudentRoutes(db, router)
 

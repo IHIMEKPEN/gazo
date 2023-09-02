@@ -3,9 +3,10 @@ package handlerReset
 import (
 	"net/http"
 
+	resetAuth "gazo/controllers/auth-controllers/reset"
+	util "gazo/utils"
+
 	"github.com/gin-gonic/gin"
-	resetAuth "github.com/restuwahyu13/gin-rest-api/controllers/auth-controllers/reset"
-	util "github.com/restuwahyu13/gin-rest-api/utils"
 	gpc "github.com/restuwahyu13/go-playground-converter"
 	"github.com/sirupsen/logrus"
 )

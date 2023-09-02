@@ -3,7 +3,8 @@ package activationAuth
 import (
 	"time"
 
-	model "github.com/restuwahyu13/gin-rest-api/models"
+	model "gazo/models"
+
 	"gorm.io/gorm"
 )
 

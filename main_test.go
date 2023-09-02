@@ -6,9 +6,10 @@ import (
 	"net/http/httptest"
 	"testing"
 
+	util "gazo/utils"
+
 	"github.com/gin-gonic/gin"
 	"github.com/go-playground/assert/v2"
-	util "github.com/restuwahyu13/gin-rest-api/utils"
 	"github.com/restuwahyu13/go-supertest/supertest"
 	. "github.com/smartystreets/goconvey/convey"
 	"syreclabs.com/go/faker"

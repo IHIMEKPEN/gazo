@@ -3,8 +3,9 @@ package config
 import (
 	"os"
 
-	model "github.com/restuwahyu13/gin-rest-api/models"
-	util "github.com/restuwahyu13/gin-rest-api/utils"
+	model "gazo/models"
+	util "gazo/utils"
+
 	"github.com/sirupsen/logrus"
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"

@@ -1,18 +1,19 @@
 package route
 
 import (
+	createStudent "gazo/controllers/student-controllers/create"
+	deleteStudent "gazo/controllers/student-controllers/delete"
+	resultStudent "gazo/controllers/student-controllers/result"
+	resultsStudent "gazo/controllers/student-controllers/results"
+	updateStudent "gazo/controllers/student-controllers/update"
+	handlerCreateStudent "gazo/handlers/student-handlers/create"
+	handlerDeleteStudent "gazo/handlers/student-handlers/delete"
+	handlerResultStudent "gazo/handlers/student-handlers/result"
+	handlerResultsStudent "gazo/handlers/student-handlers/results"
+	handlerUpdateStudent "gazo/handlers/student-handlers/update"
+	middleware "gazo/middlewares"
+
 	"github.com/gin-gonic/gin"
-	createStudent "github.com/restuwahyu13/gin-rest-api/controllers/student-controllers/create"
-	deleteStudent "github.com/restuwahyu13/gin-rest-api/controllers/student-controllers/delete"
-	resultStudent "github.com/restuwahyu13/gin-rest-api/controllers/student-controllers/result"
-	resultsStudent "github.com/restuwahyu13/gin-rest-api/controllers/student-controllers/results"
-	updateStudent "github.com/restuwahyu13/gin-rest-api/controllers/student-controllers/update"
-	handlerCreateStudent "github.com/restuwahyu13/gin-rest-api/handlers/student-handlers/create"
-	handlerDeleteStudent "github.com/restuwahyu13/gin-rest-api/handlers/student-handlers/delete"
-	handlerResultStudent "github.com/restuwahyu13/gin-rest-api/handlers/student-handlers/result"
-	handlerResultsStudent "github.com/restuwahyu13/gin-rest-api/handlers/student-handlers/results"
-	handlerUpdateStudent "github.com/restuwahyu13/gin-rest-api/handlers/student-handlers/update"
-	middleware "github.com/restuwahyu13/gin-rest-api/middlewares"
 	"gorm.io/gorm"
 )
 

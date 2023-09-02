@@ -1,7 +1,7 @@
 package resendAuth
 
 import (
-	model "github.com/restuwahyu13/gin-rest-api/models"
+	model "gazo/models"
 )
 
 type Service interface {

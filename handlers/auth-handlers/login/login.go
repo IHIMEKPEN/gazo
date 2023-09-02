@@ -3,9 +3,10 @@ package handlerLogin
 import (
 	"net/http"
 
+	loginAuth "gazo/controllers/auth-controllers/login"
+	util "gazo/utils"
+
 	"github.com/gin-gonic/gin"
-	loginAuth "github.com/restuwahyu13/gin-rest-api/controllers/auth-controllers/login"
-	util "github.com/restuwahyu13/gin-rest-api/utils"
 	gpc "github.com/restuwahyu13/go-playground-converter"
 	"github.com/sirupsen/logrus"
 )

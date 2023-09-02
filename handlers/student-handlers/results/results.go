@@ -3,9 +3,10 @@ package handlerResultsStudent
 import (
 	"net/http"
 
+	resultsStudent "gazo/controllers/student-controllers/results"
+	util "gazo/utils"
+
 	"github.com/gin-gonic/gin"
-	resultsStudent "github.com/restuwahyu13/gin-rest-api/controllers/student-controllers/results"
-	util "github.com/restuwahyu13/gin-rest-api/utils"
 )
 
 type handler struct {

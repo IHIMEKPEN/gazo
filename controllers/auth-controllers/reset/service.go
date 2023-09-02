@@ -1,6 +1,6 @@
 package resetAuth
 
-import model "github.com/restuwahyu13/gin-rest-api/models"
+import model "gazo/models"
 
 type Service interface {
 	ResetService(input *InputReset) (*model.EntityUsers, string)

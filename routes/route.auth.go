@@ -1,19 +1,20 @@
 package route
 
 import (
+	activationAuth "gazo/controllers/auth-controllers/activation"
+	forgotAuth "gazo/controllers/auth-controllers/forgot"
+	loginAuth "gazo/controllers/auth-controllers/login"
+	registerAuth "gazo/controllers/auth-controllers/register"
+	resendAuth "gazo/controllers/auth-controllers/resend"
+	resetAuth "gazo/controllers/auth-controllers/reset"
+	handlerActivation "gazo/handlers/auth-handlers/activation"
+	handlerForgot "gazo/handlers/auth-handlers/forgot"
+	handlerLogin "gazo/handlers/auth-handlers/login"
+	handlerRegister "gazo/handlers/auth-handlers/register"
+	handlerResend "gazo/handlers/auth-handlers/resend"
+	handlerReset "gazo/handlers/auth-handlers/reset"
+
 	"github.com/gin-gonic/gin"
-	activationAuth "github.com/restuwahyu13/gin-rest-api/controllers/auth-controllers/activation"
-	forgotAuth "github.com/restuwahyu13/gin-rest-api/controllers/auth-controllers/forgot"
-	loginAuth "github.com/restuwahyu13/gin-rest-api/controllers/auth-controllers/login"
-	registerAuth "github.com/restuwahyu13/gin-rest-api/controllers/auth-controllers/register"
-	resendAuth "github.com/restuwahyu13/gin-rest-api/controllers/auth-controllers/resend"
-	resetAuth "github.com/restuwahyu13/gin-rest-api/controllers/auth-controllers/reset"
-	handlerActivation "github.com/restuwahyu13/gin-rest-api/handlers/auth-handlers/activation"
-	handlerForgot "github.com/restuwahyu13/gin-rest-api/handlers/auth-handlers/forgot"
-	handlerLogin "github.com/restuwahyu13/gin-rest-api/handlers/auth-handlers/login"
-	handlerRegister "github.com/restuwahyu13/gin-rest-api/handlers/auth-handlers/register"
-	handlerResend "github.com/restuwahyu13/gin-rest-api/handlers/auth-handlers/resend"
-	handlerReset "github.com/restuwahyu13/gin-rest-api/handlers/auth-handlers/reset"
 	"gorm.io/gorm"
 )
 

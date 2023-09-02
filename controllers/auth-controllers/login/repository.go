@@ -1,8 +1,9 @@
 package loginAuth
 
 import (
-	model "github.com/restuwahyu13/gin-rest-api/models"
-	util "github.com/restuwahyu13/gin-rest-api/utils"
+	model "gazo/models"
+	util "gazo/utils"
+
 	"gorm.io/gorm"
 )
 

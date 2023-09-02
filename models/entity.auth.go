@@ -3,8 +3,9 @@ package model
 import (
 	"time"
 
+	util "gazo/utils"
+
 	"github.com/google/uuid"
-	util "github.com/restuwahyu13/gin-rest-api/utils"
 	"gorm.io/gorm"
 )
 
